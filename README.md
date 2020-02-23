@@ -13,6 +13,14 @@ $ git clone https://github.com/maksymkpr/docker-wp-pma.git .
 ```
 
 ## 3. Change db character, collation, name and password in .env
+```
+IP=127.0.0.1
+DB_ROOT_PASSWORD=password
+DB_NAME=wordpress
+CHARACTER_SERVER=utf8mb4
+COLLATION_SERVER=utf8mb4_unicode_ci
+```
+
 
 ## 4. Run docker-compose
 
