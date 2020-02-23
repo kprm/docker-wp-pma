@@ -39,6 +39,7 @@ services:
     ]
     volumes:
       - db_data:/var/lib/mysql
+      - ./wp-db:/var/www/html
     environment:
       MYSQL_DATABASE: "${DB_NAME}"
       MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
