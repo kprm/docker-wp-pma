@@ -6,7 +6,7 @@ services:
     ports:
       - ${IP}:80:80
     volumes:
-      - ./wp-app:/var/www/html
+      - ./wp-app:${PROJECT_PATH}
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: "${DB_NAME}"
@@ -39,7 +39,7 @@ services:
     ]
     volumes:
       - db_data:/var/lib/mysql
-      - ./wp-db:/var/www/html
+      - ./wp-db:${PROJECT_PATH}
     environment:
       MYSQL_DATABASE: "${DB_NAME}"
       MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
