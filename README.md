@@ -9,7 +9,7 @@ $ mkdir /var/www/html/myproject
 ## 2. clone the repo
 
 ```
-$ git clone https://github.com/maksymkpr/docker-wp-pma.git .
+$ git clone https://github.com/kprm/docker-wp-pma.git .
 ```
 
 ## 3. Change db character, collation, name and password in `.env`
